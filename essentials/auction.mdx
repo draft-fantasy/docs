@@ -1,88 +1,36 @@
 ---
 title: 'Auction Draft'
-description: 'How to play auction draft'
+description: 'How auction drafts work'
 icon: 'hammer'
 ---
 
-## Titles
+In an auction draft each team has a £250 budget.
 
-Best used for section headers.
+On each turn there's a nomination phase, and a bidding phase.
 
-```md
-## Titles
-```
+In the nomination phase, the selected manager chooses a player to nominate for the auction.
 
-### Subtitles
+They nominator automatically bids £1 for the player, and then there's a period of time (typically 30 seconds) where managers can bid on players. The manager that makes the highest bid wins the player, and the amount paid is subtracted from their balance.
 
-Best use to subsection headers.
+The draft continues until everyone in the league has a full team of players (typically 15 players per team).
 
-```md
-### Subtitles
-```
+### Time per pick
 
-<Tip>
+The time per pick is set for each league. It's typically 30 seconds. But there will be a minimum of 10 seconds after any bid is made.
 
-Each **title** and **subtitle** creates an anchor and also shows up on the table of contents on the right.
+For example, if you make a bid with 20 seconds remaining, the clock will continue to count down from 20 seconds.
+But if you make a bid with 3 seconds remaining, we will reset the clock to 10 seconds so that everyone has enough time to make a higher bid.
 
-</Tip>
+### Max bids
 
-## Text Formatting
+You can set max bids before or during the draft.
 
-We support most markdown formatting. Simply add `**`, `_`, or `~` around text to format it.
+This is the most you are willing to pay for a player. We will automatically bid up to this amount for you. But we will only ever bid £1 more than the previous highest bid up to the maximum you have set.
+You can continue to bid manually even after the maximum bid has been reached. But we won't automatically bid for you after this point.
 
-| Style         | How to write it   | Result          |
-| ------------- | ----------------- | --------------- |
-| Bold          | `**bold**`        | **bold**        |
-| Italic        | `_italic_`        | _italic_        |
-| Strikethrough | `~strikethrough~` | ~strikethrough~ |
+For example, if you set a max bid of £80 for a player, and someone else bids £50, we will automatically bid £51 for you.
+But if someone bids £80, we will no longer bid for you.
 
-You can combine these. For example, write `**_bold and italic_**` to get **_bold and italic_** text.
+In the event that two players have a set maximum bids for a player, we will automatically bid up to the second highest bid and add £1.
 
-You need to use HTML to write superscript and subscript text. That is, add `<sup>` or `<sub>` around your text.
-
-| Text Size   | How to write it          | Result                 |
-| ----------- | ------------------------ | ---------------------- |
-| Superscript | `<sup>superscript</sup>` | <sup>superscript</sup> |
-| Subscript   | `<sub>subscript</sub>`   | <sub>subscript</sub>   |
-
-## Linking to Pages
-
-You can add a link by wrapping text in `[]()`. You would write `[link to google](https://google.com)` to [link to google](https://google.com).
-
-Links to pages in your docs need to be root-relative. Basically, you should include the entire folder path. For example, `[link to text](/writing-content/text)` links to the page "Text" in our components section.
-
-Relative links like `[link to text](../text)` will open slower because we cannot optimize them as easily.
-
-## Blockquotes
-
-### Singleline
-
-To create a blockquote, add a `>` in front of a paragraph.
-
-> Dorothy followed her through many of the beautiful rooms in her castle.
-
-```md
-> Dorothy followed her through many of the beautiful rooms in her castle.
-```
-
-### Multiline
-
-> Dorothy followed her through many of the beautiful rooms in her castle.
->
-> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-
-```md
-> Dorothy followed her through many of the beautiful rooms in her castle.
->
-> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
-```
-
-### LaTeX
-
-Mintlify supports [LaTeX](https://www.latex-project.org) through the Latex component.
-
-<Latex>8 x (vk x H1 - H2) = (0,1)</Latex>
-
-```md
-<Latex>8 x (vk x H1 - H2) = (0,1)</Latex>
-```
+For example, if you have a max bid of £80 for a player, and someone else has a max bid of £70, we will automatically bid £71 for you.
