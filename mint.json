@@ -41,16 +41,16 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction", "quickstart"]
+      "pages": ["introduction"]
     },
     {
-      "group": "Rules",
+      "group": "How to Play",
       "pages": [
         "essentials/auction",
         "essentials/snake",
         "essentials/points",
-        "essentials/trades",
-        "essentials/team"
+        "essentials/team",
+        "essentials/transfers"
       ]
     }
   ],
