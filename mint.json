@@ -46,11 +46,11 @@
     {
       "group": "Rules",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation"
+        "essentials/auction",
+        "essentials/snake",
+        "essentials/points",
+        "essentials/trades",
+        "essentials/team"
       ]
     }
   ],
