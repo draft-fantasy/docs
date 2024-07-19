@@ -1,0 +1,80 @@
+---
+title: 'Waivers'
+description: 'How waivers work'
+icon: 'shield-check'
+---
+
+Waivers give everyone a fair chance to pick up unowned players.
+When a player is on waivers, every manager in the league can put in a waiver request, and the player will be picked up by the manager who is highest in the waiver queue (or has made the largest bid for the player).
+
+## When Players Go On Waivers
+
+* All players go on waivers at the start of a gameweek.
+* All fixture players go on waivers at the start of a fixture. For example, if Man City play Arsenal at 10pm, then all Man City and Arsenal players will go on waivers at 10pm.
+* New players added to the game will go on waivers when added to the game.
+
+## When Players Go Off Waivers
+
+Players go off waivers each time waivers are processed.
+
+## Waiver Processing Days
+
+Waivers are processed every Tuesday and Friday at 11am UTC.
+On rare occassions we may decide to add additional waiver processing days when consecutive gameweeks start very close together.
+For example, if a gameweek starts on Friday, and the next gameweek starts on Monday, then we may add an additional waiver processing day on Monday so that people have a chance to make changes before the new gameweek starts.
+This may happen once across the season depending on how the gameweeks fall.
+
+## Waiver Order
+
+The initial waiver queue order is set to the reverse draft order.
+When a successful waiver request is made, the manager drops to the bottom of the waiver queue.
+If you're in a league using the `Weekly Reset` format, then the waiver queue order is reset at the first waiver processing of the gameweek.
+
+## Waiver Formats
+
+### Waiver Bids (FAAB)
+
+Each player is given a budget of £200 at the start of the season. This budget is used to bid on players on waivers.
+
+The player goes to the manager that made the highest bid. And that manager's budget is reduced by the amount of the bid.
+
+You can bid £0 for a player, so even if you run out of your waiver budget, you can pick up players on waivers.
+
+If two players make the same bid, then the waiver order works the same way as rolling waivers.
+
+Your budget is not reduced when you bid on a player, but fail to pick up the player.
+
+Your budget cannot go below £0.
+
+**Example:**
+
+- Man City buys Dani Olmo.
+- 3 managers in the league want him.
+- Alice bids £80
+- Bob bids £95
+- Charlie bids £150
+
+Then Dani Olmo is picked up by Charlie, and his waiver budget goes from £200 to £50. Alice an Bob's budgets remain unchanged, so they'll be in a stronger position to pick up players later in the season.
+
+### Rolling
+
+The initial waiver order is set to the reverse draft order. Then each time a manager makes a successful waiver request, the manager is dropped to the bottom of the queue. The order is never reset.
+
+### Weekly Reset
+
+The initial waiver order is set to the reverse draft order. Then each time a manager makes a successful waiver request, the manager is dropped to the bottom of the queue.
+The waiver order is reset at the first waiver processing of the gameweek to the reverse order of standings.
+So the team that is bottom of the league will be at the top of the waiver queue, giving them a chance to pick up the best player on waivers and catch up.
+
+### None
+
+If `None` is selected then your league will not have any waivers and players will always be free to pick up at any time.
+
+## Changes From Previous Seasons
+
+We've made some changes to simplify waivers compared to previous seasons.
+
+* If you drop a player, the player does not go on waivers, but is immediately free to be picked up by anyone.
+* New formats available (`FAAB` and `None`).
+* Weekly waiver order reset happens in the first waiver processing of the week. In the past, this reset happened at the start of the gameweek. This only matters for leagues that use the `Weekly Reset` option.
+* There is no minimum time a player must be on waivers after a fixture.

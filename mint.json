@@ -50,7 +50,8 @@
         "essentials/snake",
         "essentials/points",
         "essentials/team",
-        "essentials/transfers"
+        "essentials/transfers",
+        "essentials/waivers"
       ]
     }
   ],
