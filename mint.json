@@ -51,7 +51,8 @@
         "essentials/points",
         "essentials/team",
         "essentials/transfers",
-        "essentials/waivers"
+        "essentials/waivers",
+        "essentials/app"
       ]
     }
   ],
