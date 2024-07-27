@@ -64,6 +64,15 @@ Your budget cannot go below £0.
 
 Then Dani Olmo is picked up by Charlie, and his waiver budget goes from £200 to £50 (reduced by £150). Alice and Bob's budgets remain unchanged, so they'll be in a stronger position to pick up players later in the season.
 
+The order that waivers are processed is as follows:
+
+1. The highest bid is processed first.
+2. If two bids are tied, then the manager that is highest in the waiver queue has their bid processed first.
+3. The bid is either accepted or rejected. It may be rejected if the manager's budget is insufficient, or it leads to an invalid squad.
+4. Steps 1-3 are repeated until all pending waiver requests are either accepted or rejected.
+
+This means you cannot reorder your waiver requests unless two of your bids are for the same amount.
+
 ### Rolling
 
 The initial waiver order is set to the reverse draft order. Then each time a manager makes a successful waiver request, the manager is dropped to the bottom of the queue. The order is never reset.
