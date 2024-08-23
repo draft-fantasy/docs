@@ -53,7 +53,7 @@
         "essentials/transfers",
         "essentials/waivers",
         "essentials/app",
-        "essentials/other",
+        "essentials/csv",
         "essentials/faq"
       ]
     }
