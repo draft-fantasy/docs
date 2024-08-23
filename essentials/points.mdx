@@ -95,14 +95,20 @@ If you were to set BPS to 1-1-1-1, and a player scores 30 BPS, then they'd be aw
 ### Kante Points
 
 We added the Kante rule to award players like N'Golo Kanté that are critical in a match, but typically do not score well in fantasy football.
-Where Kante would excel is tackles and interceptions, but in the default scoring system this stat does not earn any points.
+Where N'Golo Kante would excel is tackles and interceptions, but in the default scoring system this stat does not earn any points.
 You can award players points for interceptions and tackles, but when we originally introduced Kante Points, this was not an option.
-For managers that prefer to use the original Kante points rules, we have added a setting to the scoring system.
+For managers that prefer to use the original Kante points rules, we have added a setting to the scoring system for this.
 
-A Kante is defined as a tackle or an interception.
-To award `1` Kante point for every 2 tackles and/or interceptions, you can set `Per no of kantes` to `2`, and `Kante` to 1.
-To award `1` Kante point for every 3 tackles and/or interceptions, you can set `Per no of kantes` to `3`, and `Kante` to 1.
-You can find this setting when clicking `Edit Custom Scoring`.
+The Kante points rule would award 1 point for every 2 tackles and/or interceptions for midfielders and forwards.
 
-The regular Kante rule is 1 point awarded for every 2 tackles and/or interceptions.
-To set this, set `Kante` to `1`, and `Per no of kantes` to `2` for all 4 player positions.
+To set this, you can set `Tackle/Interception` to 1 and `Per no of tackles/interceptions` to 2 for midfielders and forwards.
+So it should look like this:
+
+| Player position | Tackle/Interception | Per no of tackles/interceptions |
+|-----------------|---------------------|------------------------------|
+| Goalkeeper      | 0                   | 0                            |
+| Defender        | 0                   | 0                            |
+| Midfielder      | 1                   | 2                            |
+| Forward         | 1                   | 2                            |
+
+Of course, you can adjust these values to your liking.
