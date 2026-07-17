@@ -1,0 +1,55 @@
+---
+title: 'Cups and Playoffs'
+description: 'Qualification, seeding, progression, and tie rules'
+icon: 'medal'
+---
+
+Cups and playoffs are separate knockout competitions. A league can use either, both, or neither.
+
+## Custom cups
+
+The commissioner sets up a cup from the league's `Cup Setup` page. A cup can have 2, 4, 8, 16, or 32 teams and can use one to four legs in each round.
+
+### Qualification and seeding
+
+The commissioner can select the top teams automatically or choose every first-round pairing manually.
+
+For automatic qualification, standings are taken at the end of the gameweek before round one starts:
+
+- Head-to-head leagues rank teams by head-to-head table points, then total fantasy points.
+- Classic leagues rank teams by total fantasy points.
+
+If those values are also equal, a consistent internal team-ID order is used. Automatic seeding is not random.
+
+The first round pairs the highest seed with the lowest, the second-highest with the second-lowest, and so on. The bracket then continues in order: the winner of tie 1 plays the winner of tie 2.
+
+### Legs and aggregate scores
+
+Fantasy points are added across every leg of a tie. Home and away labels reverse on even-numbered legs, but there is no away-points rule.
+
+If the aggregate score is level in a round that must produce teams for the next round, the tiebreak order is:
+
+1. Higher stored seed
+2. Higher total fantasy points in the league
+3. Higher head-to-head table points
+4. A consistent internal team-ID fallback
+
+Manually paired cups do not normally have stored seeds, so their tiebreak starts with total fantasy points. The result is deterministic, not random. The league's draw-threshold setting does not apply.
+
+<Warning>
+  This progression tiebreak is only applied when creating another round. A cup final that finishes level on aggregate does not currently receive an automatic champion. Contact support if this happens in your league.
+</Warning>
+
+If automatic progression is enabled, the next fixtures are created after the preceding gameweek has finished and its points are available. Otherwise, the commissioner generates each round from `Cup Setup`.
+
+## Playoffs
+
+Playoffs are a built-in top-four competition scheduled for competition-specific gameweeks. They are separate from custom cups. The exact gameweeks are shown in `Settings`; they are fixed by the competition and are not moved by your league's final-gameweek setting, so regular fixtures and playoffs can overlap.
+
+The top four are taken from the standings when the semi-finals are created, after the competition's playoff qualification gameweek finishes. Head-to-head table points are considered first, followed by total fantasy points. In a Classic league, total fantasy points normally decide the order. The semi-finals are seed 1 vs seed 4 and seed 2 vs seed 3, followed by a final.
+
+Under the current progression rules, if a semi-final score is level, the team with more total fantasy points in the league advances. If that is also level, head-to-head table points are used. If every value is equal, the last fallback is random.
+
+<Warning>
+  A playoff final that finishes level does not currently receive an automatic winner. Contact support if this happens in your league.
+</Warning>

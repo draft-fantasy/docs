@@ -10,9 +10,11 @@ On each turn there's a nomination phase, and a bidding phase.
 
 In the nomination phase, the selected manager chooses a player to nominate for the auction.
 
-They nominator automatically bids £1 for the player, and then there's a period of time (typically 30 seconds) where managers can bid on players. The manager that makes the highest bid wins the player, and the amount paid is subtracted from their balance.
+The nominator automatically bids £1 for the player, and then there's a period of time where managers can bid. The manager who makes the highest valid bid wins the player, and the amount paid is subtracted from their balance.
 
-The draft continues until everyone in the league has a full team of players (typically 15 players per team).
+Nomination order follows the same reversing order as a snake draft. Teams whose squads are already full are skipped. The draft continues until everyone has filled the squad size configured for the league.
+
+Your bid must leave at least £1 for every squad place that will still be empty after the purchase. This means your maximum available bid can be lower than the balance shown for your team.
 
 ### Max bids
 
@@ -24,7 +26,7 @@ You can continue to bid manually even after the maximum bid has been reached. Bu
 For example, if you set a max bid of £80 for a player, and someone else bids £50, we will automatically bid £51 for you.
 But if someone bids £80, we will no longer bid for you.
 
-In the event that two players have a set maximum bids for a player, we will automatically bid up to the second highest bid and add £1.
+When several managers have max bids, the price rises only enough to beat the next-highest valid max bid, without exceeding the leading manager's maximum.
 
 For example, if you have a max bid of £80 for a player, and someone else has a max bid of £70, we will automatically bid £71 for you.
 
@@ -37,12 +39,12 @@ But if you make a bid with 3 seconds remaining, we will reset the clock to 10 se
 
 ### When the clock runs out
 
-If the clock runs out in the nomination phase, we will automatically pick a player for the nominator.
+If the clock runs out in the nomination phase, we automatically nominate a valid player for the nominator.
 
 This will be as follows:
 
-* The player with the highest max bid, that they are still able to pick.
-* The player with the highest rating (as set by Draft Fantasy).
+* The valid player with their highest max bid.
+* If none is available, the valid player with the highest Draft Fantasy rating.
 
 When the clock runs out in the bidding phase, the team with the highest bid wins the player.
 
