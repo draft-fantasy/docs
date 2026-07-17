@@ -7,7 +7,7 @@ icon: 'snake'
 In a snake draft, managers pick players one at a time.
 You can pick any unpicked player as long as the player fits into the squad constraints for the league.
 
-Each round, the bidding order is reversed. Hence the name "Snake Draft".
+Each round, the pick order is reversed. Hence the name "Snake Draft".
 
 The order in a 5 person snake draft is as follows:
 
@@ -35,15 +35,15 @@ The order in a 5 person snake draft is as follows:
 * Manager 4 picks a player.
 * Manager 5 picks a player.
 
-And so on. Typically there are 15 rounds of picks at which point the draft is complete.
+And so on. The draft ends when every manager has filled the league's configured squad size: lineup plus bench.
+
+The commissioner can arrange the draft order before it starts. If no complete custom order is set, the order is randomized when the draft starts. The initial waiver queue is the reverse of the draft order.
 
 ## Auto Picks
 
-If you run out of time, your autopick list is used to pick the next player for you.
-You can also use the autopick list as a shortlist to pick from during the draft.
+If your clock expires, Draft Fantasy selects the first valid player in your auto-pick list. If none is valid, it selects the highest-rated valid player. You can also use the auto-pick list as a shortlist during the draft.
 
-Offline managers aren't automatically autopicked for which did happen in previous versions of Draft Fantasy.
-League admin can decide to end picking early for a manager by clicking "Force Pick" in the admin section at the top of the draft page.
+With standard pick times of five minutes or less, a manager who has been offline for five minutes is fast-tracked to an automatic pick. Custom slow drafts over five minutes keep the full pick time. The commissioner can also end the current turn with `Force Pick`, which uses the same auto-pick rules.
 
 ## League Admin
 

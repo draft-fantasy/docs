@@ -25,6 +25,8 @@ There are 4 waiver formats you can choose from which are explained in greater de
 
 Players go off waivers each time waivers are processed.
 
+You can edit a pending FAAB bid or cancel a pending waiver request before processing begins. During the processing window, transfers and lineup changes are temporarily locked.
+
 ## Waiver Processing Days
 
 Waivers are processed every Tuesday and Friday at 10am UTC (GMT). This is 11am BST (British Summer Time).
@@ -38,7 +40,7 @@ For the World Cup, waivers also run at 10am UTC on the morning of each new gamew
 
 The initial waiver queue order is set to the reverse draft order.
 When a successful waiver request is made, the manager drops to the bottom of the waiver queue.
-If you're in a league using the `Weekly Reset` format, then the waiver queue order is reset at the first waiver processing of the gameweek.
+If you're in a league using the `Weekly Reset` format, then the waiver queue order is reset before the first scheduled waiver processing of the gameweek.
 
 ## Waiver Formats
 
@@ -82,8 +84,10 @@ The initial waiver order is set to the reverse draft order. Then each time a man
 ### Weekly Reset
 
 The initial waiver order is set to the reverse draft order. Then each time a manager makes a successful waiver request, the manager is dropped to the bottom of the queue.
-The waiver order is reset at the first waiver processing of the gameweek to the reverse order of standings.
+The waiver order is reset before the first scheduled waiver processing of the gameweek to the reverse order of standings.
 So the team that is bottom of the league will be at the top of the waiver queue, giving them a chance to pick up the best player on waivers and catch up.
+
+For this reset, Head-to-Head leagues place teams with fewer table points first, followed by teams with fewer total fantasy points. Classic leagues use fewer total fantasy points. If the relevant values are equal, the existing queue order is retained.
 
 ### None
 

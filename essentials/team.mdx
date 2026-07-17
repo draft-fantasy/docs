@@ -6,6 +6,16 @@ icon: 'users'
 
 To set your team click on the `Team` page on the dashboard.
 
+## Squad Rules
+
+Your league can customise its lineup size, bench size, minimum and maximum squad players by position, and maximum players from one real-world club. Draft picks and transfers must leave a valid squad. Visit the league's `Settings` page to see its rules.
+
+## Gameweek Deadline
+
+Your lineup and ordered bench are saved at the gameweek deadline. Changes made after that snapshot apply to future gameweeks, not the gameweek already underway.
+
+Lineup changes and transfers may be briefly unavailable while the game advances to a new gameweek or waivers are processing.
+
 ## Valid Formations
 
 The default formations allowed are:
@@ -23,8 +33,8 @@ The allowed formations can also be customised by the league admin. To view the f
 
 ### Substitutes
 
-If a player in your starting lineup doesn't play, they are automatically replaced with a player from your substitutes.
+If auto subs are enabled for your league, a starter who records no minutes is replaced after the gameweek with an eligible player from your bench.
 
-The order of your substitutes matters. We will pick the first player in the list of substitutes (left most in `Pitch` view).
+The order of your substitutes matters. We use the first bench player, from left to right in `Pitch` view, who recorded minutes and keeps the lineup valid. Bench players who did not play or would create an invalid formation are skipped.
 
-The formation constraints must still match. So we won't replace a defender that hasn't played with a goalkeeper if that leads to having 2 goalkeepers in the lineup.
+If no bench player is eligible, no substitution is made. Auto subs can be enabled or disabled by the commissioner.

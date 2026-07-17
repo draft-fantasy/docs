@@ -44,18 +44,28 @@
       "pages": ["introduction"]
     },
     {
-      "group": "How to Play",
+      "group": "League Rules",
       "pages": [
-        "essentials/auction",
-        "essentials/snake",
+        "essentials/league-formats",
         "essentials/points",
+        "essentials/cups"
+      ]
+    },
+    {
+      "group": "Draft",
+      "pages": ["essentials/auction", "essentials/snake"]
+    },
+    {
+      "group": "Manage Team",
+      "pages": [
         "essentials/team",
         "essentials/transfers",
-        "essentials/waivers",
-        "essentials/app",
-        "essentials/csv",
-        "essentials/faq"
+        "essentials/waivers"
       ]
+    },
+    {
+      "group": "More",
+      "pages": ["essentials/app", "essentials/csv", "essentials/faq"]
     }
   ],
   "footerSocials": {
