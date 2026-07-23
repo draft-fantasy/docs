@@ -38,6 +38,36 @@ To change the scoring system, visit the league `Settings` page, click `Edit`, an
 
 You will need to be the league admin to make changes.
 
+### Defensive contributions
+
+A defensive contribution is a combined total of defensive actions recorded for one player in one match:
+
+| Player position | Actions that count | Default award |
+|-----------------|--------------------|---------------|
+| Goalkeeper | None | No points |
+| Defender | Clearances, blocks, interceptions and tackles | 2 points at 10 contributions |
+| Midfielder or forward | Clearances, blocks, interceptions, tackles and ball recoveries | 2 points at 12 contributions |
+
+A ball recovery is counted when a player wins or collects the ball and secures possession for their team. Recoveries count for midfielders and forwards, but not for defenders.
+
+The default award is calculated separately for each match and is capped at 2 points. For example, a defender with 20 contributions still receives 2 points, not 4.
+
+You can change this using three custom scoring fields:
+
+- `Defensive contribution` is the number of points awarded each time the threshold is reached.
+- `Per no of defensive contributions` is the threshold.
+- `Max points from defensive contributions` is the most a player can receive in one match. Set it to `0` for no cap.
+
+For example, settings of `2`, `10` and `2` award 2 points at 10 contributions, with a maximum of 2 points per match.
+
+### Accurate pass percentage
+
+The `Accurate pass %` custom scoring field has no percentage threshold or minimum number of attempted passes. It awards the value you enter for every percentage point of a player's recorded pass completion in that match.
+
+For example, if you set it to `0.1` and a player completes 84% of their passes, they receive 8.4 points. Setting it to `1` would award 84 points. This field cannot currently award a one-off number of points for reaching a chosen percentage.
+
+This is separate from pass completion in the Bonus Points System (BPS). BPS requires at least 30 attempted passes and uses the 70%, 80% and 90% bands shown below.
+
 ### Bonus points
 
 1-3 points are awarded to the players that receive the most BPS (Bonus Points System) in a match.
