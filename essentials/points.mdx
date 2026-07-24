@@ -38,6 +38,26 @@ To change the scoring system, visit the league `Settings` page, click `Edit`, an
 
 You will need to be the league admin to make changes.
 
+### Available stats
+
+You can set the points awarded for each of the following, separately for each position:
+
+- **Appearance and attacking**: minutes played (under 60, and 60 or more), goal scored, assist, expected goal (xG), expected assist (xA).
+- **Goalkeeping and defending**: goal conceded (per number conceded), expected goals conceded, clean sheet, save (per number of saves), penalty saved, defensive contribution (with its own threshold and cap), tackle, interception, block, clearance.
+- **Discipline**: yellow card, red card, own goal, penalty missed, foul committed, foul won, dispossession.
+- **Passing and creativity**: pass, accurate pass %, key pass, cross, big chance created.
+- **Shooting and duels**: shot on target, shot off target, aerial won, touch, dribble.
+- **Bonus**: BPS and Bonus multipliers, and the Kante rule (points per set number of tackles and interceptions).
+
+### Data availability by competition
+
+Not every stat is recorded in every competition, because different games use different data sources:
+
+- The **Premier League** uses official FPL data. It supports BPS, Bonus points, Defensive contributions and expected stats (xG, xA, expected goals conceded), but not the individual match events such as key passes, crosses, tackles, dribbles or shots.
+- **Other competitions** (La Liga, Serie A, Bundesliga, Ligue 1, MLS, Brazil, the Champions League and the World Cup) use a detailed match-stats provider. They support passing, pass accuracy, tackles, interceptions, blocks, dribbles, shots, fouls and cards, but not BPS, Bonus points or Defensive contributions.
+
+BPS, Bonus points and Defensive contributions are hidden from the scoring editor in competitions that do not support them. Any other stat your competition does not record simply scores zero, even if it still appears in the editor.
+
 ### Defensive contributions
 
 A defensive contribution is a combined total of defensive actions recorded for one player in one match:
