@@ -1,7 +1,7 @@
 ---
-title: 'CSV/API'
-description: 'How to download your league data in CSV format or use our API to access your league data.'
-icon: 'bars'
+title: 'CSV Export'
+description: 'How to download your league data in CSV format.'
+icon: 'file-csv'
 ---
 
 ## Download Players
@@ -10,18 +10,6 @@ You can download a CSV spreadsheet of players from `/api/players/csv` on the dom
 
 Add `?leagueId=<LEAGUE_ID>` to calculate the exported points using that league's custom scoring.
 
-## API
+## League and draft data
 
-The API returns data in JSON format. To convert the data to CSV, you can use a tool like [JSON to CSV](https://www.convertcsv.com/json-to-csv.htm).
-
-### League
-
-You can grab your league data via our API by making a `GET` request to `/api/v1/league/<LEAGUE_ID>` on the correct competition domain.
-You'll need to replace `<LEAGUE_ID>` with your actual league ID.
-For example, if you wanted to get the league with an ID of `abcde`, you would make a request to `https://app.draftfantasy.com/api/v1/league/abcde`.
-
-### Draft
-
-After the draft is complete, you can grab the draft data by making a `GET` request to `/api/v1/league/<LEAGUE_ID>/draft` on the correct competition domain.
-You'll need to replace `<LEAGUE_ID>` with your actual league ID.
-For example, if you wanted to get the draft with an ID of `abcde`, you would make a request to `https://app.draftfantasy.com/api/v1/league/abcde/draft`.
+League and draft data is available in JSON format via our [API](/essentials/api). To convert the data to CSV, you can use a tool like [JSON to CSV](https://www.convertcsv.com/json-to-csv.htm).

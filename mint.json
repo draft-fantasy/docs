@@ -65,7 +65,12 @@
     },
     {
       "group": "More",
-      "pages": ["essentials/app", "essentials/csv", "essentials/faq"]
+      "pages": [
+        "essentials/app",
+        "essentials/csv",
+        "essentials/api",
+        "essentials/faq"
+      ]
     }
   ],
   "footerSocials": {
