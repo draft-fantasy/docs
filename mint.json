@@ -53,20 +53,27 @@
     },
     {
       "group": "Draft",
-      "pages": ["essentials/auction", "essentials/snake"]
+      "pages": [
+        "essentials/auction",
+        "essentials/snake",
+        "essentials/mock-drafts"
+      ]
     },
     {
       "group": "Manage Team",
       "pages": [
         "essentials/team",
         "essentials/transfers",
-        "essentials/waivers"
+        "essentials/waivers",
+        "essentials/custom-views"
       ]
     },
     {
       "group": "More",
       "pages": [
         "essentials/app",
+        "essentials/notifications",
+        "essentials/commissioner",
         "essentials/csv",
         "essentials/api",
         "essentials/faq"
